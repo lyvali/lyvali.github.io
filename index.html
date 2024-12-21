@@ -53,6 +53,7 @@
             const star = document.createElement('div');
             star.classList.add('star');
             star.style.setProperty('--star-position', Math.random());
+            star.innerText = '❄';
             document.body.appendChild(star);
             
             setTimeout(() => {
