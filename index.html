@@ -9,19 +9,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50vh;
+            height: 25vh;
         }
 
         .size {
-            font-size: 25px;
+            font-size: 30px;
         }
     </style>
     <title>Lyvali Website :333</title>
 </head>
 <body>
-    <h1>𝐋𝕐𝚅𝙰𝐋𝕀</h1>
     <div class="flex-container">
-        <p class="size">𝐋𝕐𝚅𝙰𝐋𝕀 centered</p>
+        <p class="size">𝐋𝕐𝚅𝙰𝐋𝕀</p>
     </div>
+    <div class="generator-container"> <p class="random-character" id="randomCharacter">Generating random character...</p> </div> <script> function generateRandomCharacter() { const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; const randomIndex = Math.floor(Math.random() * characters.length); const randomCharacter = characters[randomIndex]; document.title = randomCharacter; // Update the website title document.getElementById('randomCharacter').innerText = randomCharacter; } setInterval(generateRandomCharacter, 5000); generateRandomCharacter(); </script>
 </body>
 </html>
