@@ -22,10 +22,44 @@
             height: 100vh;
             margin: 0;
         }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: fall 5s linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                top: -10px;
+                left: calc(100% * var(--star-position));
+                opacity: 1;
+            }
+            100% {
+                top: 100vh;
+                left: calc(100% * var(--star-position) + 50px);
+                opacity: 0;
+            }
+        }
     </style>
     <title>Lyvali Website :333</title>
 </head>
 <body>
+    <script>
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.setProperty('--star-position', Math.random());
+            document.body.appendChild(star);
+            
+            setTimeout(() => {
+                star.remove();
+            }, 5000);
+        }
+        setInterval(createStar, 500);
+    </script>
     <div class="flex-container">
         <p class="size">𝐋𝕐𝚅𝙰𝐋𝕀</p>
     </div>
