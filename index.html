@@ -22,5 +22,5 @@
     <div class="flex-container">
         <p class="size">𝐋𝕐𝚅𝙰𝐋𝕀</p>
     </div>
-    <div class="generator-container"> <p class="random-character" id="randomCharacter">Generating random characters...</p> </div> <script> function generateRandomCharacters() { const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; let randomCharacters = ''; for (let i = 0; i < 10; i++) { const randomIndex = Math.floor(Math.random() * characters.length); randomCharacters += characters[randomIndex]; } document.title = randomCharacters; document.getElementById('randomCharacter').innerText = randomCharacters; } setInterval(generateRandomCharacters, 1000); generateRandomCharacters(); </script>
+    <div class="generator-container"> <p class="random-character" id="randomCharacter"></p> </div> <script> function generateRandomCharacters() { const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; let randomCharacters = ''; for (let i = 0; i < 10; i++) { const randomIndex = Math.floor(Math.random() * characters.length); randomCharacters += characters[randomIndex]; } document.title = randomCharacters; document.getElementById('randomCharacter').innerText = randomCharacters; } setInterval(generateRandomCharacters, 5000); generateRandomCharacters(); </script>
 </html>
