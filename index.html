@@ -20,6 +20,16 @@
             height: 25vh;
         }
 
+        .conTwo {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 25vh;
+        }
+
         @media (max-width: 600px) {
             .container {
                 width: 100%;
@@ -52,7 +62,13 @@
 
         .title {
             color: white;
-            font-size: 75px;
+            font-size: 60px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .text {
+            color: white;
+            font-size: 25px;
             text-shadow: 1px 1px 2px #000;
         }
 
@@ -68,7 +84,11 @@
 </head>
 <body>
     <div class="conOne">
-        <p class="title">Daydream</p>
+        <h1 class="title">Daydream</h1>
         <button class="buttonsets">Download</button>
+    </div>
+    <div class="conTwo">
+        <h1 class="title">What is Daydream?</h1>
+        <p class="text">Daydream is a Roblox executor that bypasses Byfron.</p>
     </div>
 </html>
