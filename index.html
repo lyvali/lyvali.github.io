@@ -9,9 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="The best, free, keyless, multi-API, Roblox Executor out there.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    function openWebpage() {
-        window.open("https://github.com/lyvali/lyvali.github.io/raw/refs/heads/main/Daydream.zip", "_blank");
-    }
     <style>
         body, html {
             color: white;
@@ -171,7 +168,13 @@
             <span class="byfron">byfron.</span>
         </p>
         <img src="https://github.com/lyvali/lyvali.github.io/blob/main/placeholder.png?raw=true" alt="" class="fadein">
-        <button class="buttonsets" onclick="openWebpage()">Download</button>
+        <button class="buttonsets" id="download">Download</button>
+
+        <script>
+            document.getElementById("download").addEventListener("click", function() {
+                window.open("https://github.com/lyvali/lyvali.github.io/raw/refs/heads/main/Daydream.zip", "_blank");
+            });
+        </script>
     </div>
     <script src="https://raw.githubusercontent.com/lyvali/lyvali.github.io/refs/heads/main/fade.js"></script>
     <div class="conTwo">
