@@ -30,6 +30,19 @@
             text-align: center;
             transition: opacity 0.5s ease-in-out;
         }
+
+        .fadein {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
         
         .hidden {
             opacity: 0;
@@ -147,7 +160,7 @@
             Roblox executor that bypasses 
             <span class="byfron">byfron.</span>
         </p>
-        <img src="https://github.com/lyvali/lyvali.github.io/blob/main/placeholder.png?raw=true" alt="" class="img">
+        <img src="https://github.com/lyvali/lyvali.github.io/blob/main/placeholder.png?raw=true" alt="" class="fadein">
         <button class="buttonsets">Download</button>
     </div>
     <script src="https://raw.githubusercontent.com/lyvali/lyvali.github.io/refs/heads/main/fade.js"></script>
