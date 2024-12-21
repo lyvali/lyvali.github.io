@@ -18,14 +18,21 @@
 
         .buttonsets {
             background: transparent;
-            border: 3px solid #7F01B5;
+            border: 2px solid #7F01B5;
             color: white;
             padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .imgbutton {
+            background: transparent;
+            border: 2px solid #7F01B5;
+            color: white;
+            padding: 15px 32px;
+            margin: 0 auto;
             cursor: pointer;
             border-radius: 5px;
             text-shadow: 1px 1px 2px #000;
@@ -44,45 +51,14 @@
             margin: 0;
             overflow: hidden;
         }
-
-        .star {
-            position: absolute;
-            font-size: 24px;
-            color: white;
-            animation: fall 5s linear infinite;
-        }
-        @keyframes fall {
-            0% {
-                top: -10px;
-                left: calc(100% * var(--star-position));
-                opacity: 1;
-            }
-            100% {
-                top: 100vh;
-                left: calc(100% * var(--star-position) + 50px);
-                opacity: 0;
-            }
-        }
     </style>
     <title>Lyvali Website :333</title>
 </head>
 <body>
-    <script>
-        function createStar() {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            star.style.setProperty('--star-position', Math.random());
-            star.innerText = '❄';
-            document.body.appendChild(star);
-            
-            setTimeout(() => {
-                star.remove();
-            }, 5000);
-        }
-        setInterval(createStar, 500);
-    </script>
     <div class="flex-container">
         <p class="size">Lyvali</p>
-        <button class="buttonsets">Download Sodium Executor</button>
+        <button class="imgbutton">
+            <img src="" alt="Button Image" style="width: 50px; height: 50px;">
+        </button>
     </div>
 </html>
