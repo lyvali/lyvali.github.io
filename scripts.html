@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lyvali - Scripts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The best, free, keyless Roblox Executor out there.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            color: white;
+            background: linear-gradient(to bottom, #3C296D, #000000);
+            overflow-x: hidden !important;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+        }
+        
+        .content {
+            height: 200vh;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fadein {
+            opacity: 0;
+            animation: fadeIn 5s forwards;
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 7px;
+            display: block;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .hidden {
+            opacity: 0;
+        }
+
+        header {
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 26px 32px;
+            .header_logo {
+                max-width: 140px;
+                width: 100%;
+            }
+        }
+
+        .byfron {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: rgb(192, 134, 216);
+        }
+
+        .smallbyfron {
+            font-size: 1em;
+            font-weight: 550;
+            color: rgb(192, 134, 216);
+        }
+
+        .multiapi {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: rgb(7, 57, 166);
+        }
+        
+        .smallmultiapi {
+            font-size: 1em;
+            font-weight: 550;
+            color: rgb(7, 57, 166);
+        }
+
+        .smallundetected {
+            font-size: 1em;
+            font-weight: 550;
+            color: rgb(206, 0, 0);
+        }
+        
+        .conOne, .conTwo {
+            margin-top: 20px !important;
+            max-width: 960px;
+            padding: 26px 32px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .desc {
+            color: #fff;
+            font-size: 19px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+        
+        .img {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 7px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        .buttonsets {
+            background: #fff;
+            color: #000;
+            padding: 14px 32px;
+            margin: 0 auto;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 7px;
+            font-weight: 600;
+            box-shadow: 0 0 20px #fff;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .buttonsets:hover {
+            box-shadow: 0 0 40px #fff;
+        }
+
+        .imgbutton {
+            background: transparent;
+            border: 2px solid #7F01B5;
+            color: white;
+            padding: 15px 32px;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .title {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 600; 
+            margin: 30px 0;
+            line-height: 23px;
+        }
+
+        .exectitle {
+            color: #A401FC;
+            font-size: 65px;
+            font-weight: 600; 
+            margin: 30px 0;
+            line-height: 23px;
+        }
+
+        .text {
+            color: #fff;
+            font-weight: 400;
+            margin: 30px 0;
+            line-height: 23px;
+        }
+
+        .textsmall {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conOne">
+        <h1 class="exectitle">Daydream</h1>
+        <p class="desc">
+            Roblox 
+            <span class="multiapi">MULTI API</span>
+            executor that bypasses 
+            <span class="byfron">byfron.</span>
+        </p>
+        <img src="https://github.com/lyvali/lyvali.github.io/blob/main/daydream2.png?raw=true" alt="" class="fadein">
+        <button class="buttonsets" id="download">Download</button>
+
+        <script>
+            document.getElementById("download").addEventListener("click", function() {
+                window.open("https://github.com/lyvali/lyvali.github.io/raw/refs/heads/main/Daydream.zip", "_blank");
+            });
+        </script>
+
+        <button class="buttonsets" id="discord">Discord</button>
+
+        <script>
+            document.getElementById("discord").addEventListener("click", function() {
+                window.open("https://discord.gg/mHpRq8gVyb");
+            });
+        </script>
+    </div>
+    <div class="conTwo">
+        <h1 class="title">What is Daydream?</h1>
+        <p class="desc">
+            Daydream is a Roblox executor that bypasses
+            <span class="smallbyfron">byfron.</span>
+            Daydream is free,
+            <span class="smallmultiapi">multi api</span>
+            , and keyless.
+            Daydream was made to exploit in a Roblox game.
+            Destroy others using Daydream.
+        </p>
+    </div>
+    <div class="conTwo">
+        <h1 class="title">Current UNC</h1>
+        <p class="desc">
+            UNC is 80% and above.
+        </p>
+    </div>
+    <div class="conTwo">
+        <h1 class="title">How to download Daydream?</h1>
+        <p class="desc">
+            Press this button to download Daydream.
+        </p>
+        <button class="buttonsets" id="download2">Download</button>
+
+        <script>
+            document.getElementById("download2").addEventListener("click", function() {
+                window.open("https://github.com/lyvali/lyvali.github.io/raw/refs/heads/main/Daydream.zip", "_blank");
+            });
+        </script>
+    </div>
+    <div class="conTwo">
+        <h1 class="title">API Credits</h1>
+        <p class="desc">
+            Credits to all the API Developers.
+            Forlorn API.
+            Arcadia API.
+            and Faisal API (doesn't work).
+        </p>
+    </div>
+    <div class="conTwo">
+        <h1 class="title">Is Daydream safe?</h1>
+        <p class="desc">
+            Yes, Daydream is safe. But, you might get banned/warned since no executors are 
+            <span class="smallundetected">"undetected"</span>
+        </p>
+    </div>
+</html>
